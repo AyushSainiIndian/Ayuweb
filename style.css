@@ -1,0 +1,318 @@
+/* Reset and global styles */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header styles */
+header {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+              url('https://img1.wallspic.com/crops/3/0/8/4/6/164803/164803-bugatti_bolide-cars-sports_car-bugatti-bugatti_centodieci-7680x4320.jpg') no-repeat center/cover;
+  background-attachment: fixed;
+  color: #fff;
+  text-align: center;
+  padding: 100px 0;
+  height: 100vh;
+  position: relative;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.logo a {
+  color: #fca311;
+  font-size: 24px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.menu {
+  list-style: none;
+}
+
+.menu li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.menu a:hover {
+  color: #fca311;
+}
+
+/* Hero styles */
+.title {
+  font-size: 48px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn, .subscribe a {
+  display: inline-block;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.btn {
+  background: none;
+  border: 2px solid #fca311;
+  color: #fca311;
+}
+
+.btn:hover, .subscribe a:hover {
+  background: rgba(252, 163, 17, 0.1);
+  color: #fff;
+}
+
+.signup-btn {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background 0.3s ease, color 0.3s ease;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+}
+
+.signup-btn:hover {
+  background: #fca311;
+  color: #1b1b1b;
+}
+
+.login-btn {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background 0.3s ease, color 0.3s ease;
+  position: absolute;
+  top: 15px;
+  right: 90px; /* Adjust the right value to avoid overlap */
+}
+
+.login-btn:hover {
+  background: #fca311;
+  color: #1b1b1b;
+}
+
+.signup-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+.signup-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.signup-popup.active {
+    display: flex;
+}
+
+/* Login Popup styles */
+.login-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+.login-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.login-popup.active {
+    display: flex;
+}
+
+.login-content h2 {
+    margin-bottom: 20px;
+}
+
+.login-content form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.login-content form button.login {
+    background: #fca311;
+    color: #1b1b1b;
+}
+
+.login-content form button.login:hover {
+    background: #1b1b1b;
+    color: #fca311;
+}
+
+.login-content button.close {
+    background: #ddd;
+    color: #1b1b1b;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.login-content button.close:hover {
+    background: #1b1b1b;
+    color: #fca311;
+}
+
+/* Responsive adjustments if needed */
+@media screen and (max-width: 768px) {
+    .title {
+        font-size: 36px;
+    }
+
+    .subtitle {
+        font-size: 20px;
+    }
+
+    .btn, .subscribe a {
+        font-size: 16px;
+    }
+}
+
+/* Footer */
+footer {
+    background: #1b1b1b;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-links a, .social-icons a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.social-icons i {
+    font-size: 24px;
+}
+
+.projects {
+    background-color: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(5px);
+    padding: 80px 0;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #1b1b1b;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.project h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.project p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.project-link {
+    background: #fca311;
+    color: #1b1b1b;
+    padding: 8px 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.project-link:hover {
+    background: #1b1b1b;
+    color: #fca311;
+}

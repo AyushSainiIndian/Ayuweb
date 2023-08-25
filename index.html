@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ayush's Legendary Website</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="container">
+        <div class="logo"><a href="#">AyuWeb</a></div>
+        <ul class="menu">
+          <li><a href="#souvik">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Feedback</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="hero">
+      <h1 class="title">Ayush's Legendary Website</h1>
+      <h2 class="subtitle">Join Our Community</h2>
+      <div class="buttons">
+        <button class="btn login-btn" id="loginBtn">Login</button>
+        <button class="btn signup-btn">Sign Up</button>
+        <button class="btn subscribe"><a href="https://discord.gg/qRDyNhMG" target="_blank">Subscribe</a></button>
+      </div>
+    </div>
+  </header>
+  <div class="popup login-popup" id="loginPopup">
+    <div class="popup-content">
+      <h2>Login</h2>
+      <form>
+        <input type="email" placeholder="Email" required>
+        <input type="password" placeholder="Password" required>
+        <button class="btn login" id="loginFormBtn">Login</button>
+      </form>
+      <button class="btn close" id="closePopupBtn">Close</button>
+    </div>
+  </div>
+  
+  <div class="popup signup-popup" id="signupPopup">
+    <div class="popup-content">
+      <h2>Sign Up</h2>
+      <form>
+        <input type="text" placeholder="Username" required>
+        <input type="email" placeholder="Email" required>
+        <input type="password" placeholder="Password" required>
+        <button class="btn signup" id="signupFormBtn">Sign Up</button>
+      </form>
+      <button class="btn close" id="closeSignupPopupBtn">Close</button>
+    </div>
+  </div>
+  <div class="projects" id="projects">
+    <div class="container">
+      <h2 class="section-title">Showcase</h2>
+      <div class="project">
+        <img src="project-image-1.jpg" alt="Calculator">
+        <h3>Calculator</h3>
+        <p>Description of Project 1.</p>
+        <a href="#" class="project-link">View Project</a>
+      </div>
+      <div class="project">
+        <img src="project-image-2.jpg" alt="Music Player">
+        <h3>Music Player</h3>
+        <p>Description of Project 2.</p>
+        <a href="#" class="project-link">View Project</a>
+      </div>
+      <!-- Add more project divs as needed -->
+    </div>
+  </div>
+  
+  
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-links">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Contact</a>
+        </div>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <p>&copy; 2023 AyuWeb. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
